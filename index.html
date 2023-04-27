@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Explorer</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:400,700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dungeon Explorer</h1>
+    </header>
+    
+    <main>
+        <!-- Section 1 -->
+        <section>
+            <div class="bande">
+                <table>
+                    <tr>
+                        <td style="width:620px">
+                            <div id="myBar"><span id="life">40</span>/40</div>
+                        </td>
+                        <td>
+                            <div id="score">Score :</div>
+                        </td>
+                        <td>
+                            <div id="valeur_score">0</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- Section 2 -->
+        <section>
+            <div class="cadre_jeu" id="map">
+                <p>THIS IS MY MAP !</p>
+                <br>
+                <!--<img src="img/Player.png" alt="joueur" id="pion">
+                <img src="img/Jeton.png" alt="jeton" id="pion2">-->
+            </div>
+        </section>
+        <!-- Section 3 -->
+        <section>
+            <div id="bande">
+                <table>
+                    <tr>
+                        <td>
+                            <div id="case">
+                                <div>
+                                    <button class="bouton arrow" type="button" id="up" onclick="movePlayer('up')">&#8593;</button>
+                                </div>
+                                <div id="btn_direction">
+                                    <button class="bouton" type="button" id="left" onclick="movePlayer('left')">&#8592;</button>
+                                    <button class="bouton arrow" type="button" id="down" onclick="movePlayer('down')">&#8595;</button>
+                                    <button class="bouton" type="button" id="right" onclick="movePlayer('right')">&#8594;</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="case">
+                                <button class="bouton" type="reset" id="exit" onclick="reset()">Exit dungeon (E)</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="result"></p>
+                    <button onclick="reset()">Retry</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Script -->
+        <script src="js/script.js"></script>
+    </footer>
+</body>
+</html>

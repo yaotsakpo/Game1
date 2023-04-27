@@ -1,0 +1,106 @@
+body {
+    padding: 2em;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.cadre_jeu {
+    border: 1px solid;
+    margin: 1em auto;
+    height: 600px;
+    width: 800px;
+    background-color: #8d815f;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+#myBar {
+    background-color: green;
+    border: 1px solid;
+    padding: 5px;
+    width: 600px;
+}
+
+#score{
+    width: 70px;
+}
+
+#valeur_score{
+    width: 100px;
+    text-align: right;
+}
+
+.bande{
+    width: 800px;
+}
+
+.bouton{
+    padding: 15px;
+}
+
+#case{
+    width: 400px;
+}
+
+.arrow{
+    width: 1em;
+    margin: 0px;
+}
+
+#pion{
+    width: 1.85em;
+}
+
+#pion2{
+    width: 1.5em;
+    position: absolute;
+}
+
+#map img {
+    width: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; 
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
